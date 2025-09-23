@@ -49,7 +49,8 @@ sudo ip link set up vcan0
 python3 can-receiver.py
 ```
 
-   Terminal 2(sender):
+   Terminal 2 (sender):
+   
 ```bash
 python3 can-sender.py
 ```
@@ -57,12 +58,15 @@ python3 can-sender.py
 3. Logging CAN messages:
 
    Using socketcan you can log traffic:
+   
 ```bash
 candump vcan0 -l
 ```
+
   This generates log file like candump-2025-09-22_022331.log
 
 4. Converting Log to CSV:
+   
 ```bash
 awk 'BEGIN {OFS=","; print "Timestamp","Interface","CAN_ID","Data"} 
 {
