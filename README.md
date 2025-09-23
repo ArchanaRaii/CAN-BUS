@@ -17,6 +17,7 @@ pip install python-can
 ---
 
 ## Repository Structure
+```bash
 │── linux/
 │   ├── can-sender.py              # Virtual sender node
 │   ├── can-receiver.py            # Virtual receiver node
@@ -29,7 +30,7 @@ pip install python-can
 │   ├── usb-can-sender-receiver.py # Hardware mode (Waveshare USB-CAN-A)
 │
 └── README.md                      # Project documentation
-
+```
 ---
 
 ## Simulation Mode (Linux)
@@ -42,12 +43,12 @@ sudo ip link set up vcan1
 ```
 
 2. Run Sender and Receiver
-# Terminal 1 (receiver)
+### Terminal 1 (receiver)
 ```bash
 python3 can-receiver.py
 ```
 
-# Terminal 2 (sender)
+### Terminal 2 (sender)
 ```bash
 python3 can-sender.py
 ```
