@@ -12,8 +12,9 @@ It supports both **simulation** (virtual CAN interfaces) and **real hardware** u
 - Waveshare USB-CAN-A driver (for hardware mode)
 
 Install dependencies:
+```bash
 pip install python-can
-
+```
 ---
 
 ## Repository Structure
