@@ -27,7 +27,7 @@ pip install python-can
 │   ├── can-virtual.py             # Python simulation (send/receive on vcan or COM)
 │   ├── can-virtual.cpp            # C++ simulation of CAN messages
 │   ├── can-logging.py             # Logging CAN traffic (simulation)
-│   ├── usb-can-sender-receiver.py # Hardware mode (Waveshare USB-CAN-A)
+│   ├── usb_can_sender_receiver.py # Hardware mode (Waveshare USB-CAN-A)
 │
 └── README.md                      # Project documentation
 ```
