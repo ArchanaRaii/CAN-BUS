@@ -17,6 +17,7 @@ pip install python-can
 ```
 
 ## Repository Structure
+```bash
 │── linux/
 │ ├── can-sender.py # Virtual sender node
 │ ├── can-receiver.py # Virtual receiver node
@@ -28,6 +29,7 @@ pip install python-can
 │ ├── can-logging.py # Logging CAN traffic (simulation)
 │ ├── usb-can-sender-receiver.py # Hardware mode (Waveshare USB-CAN-A)
 └── README.md # Project documentation
+```
 
 ## Simulation Mode
 ### For linux(I'm using kali linux in vmware)
@@ -41,23 +43,25 @@ sudo ip link set up vcan0
 ```
 
 2. Run sender and receiver
-Terminal 1 (receiver):
+---   
+   Terminal 1 (receiver):
 ```bash
 python3 can-receiver.py
 ```
-
-Terminal 2(sender):
+---
+   Terminal 2(sender):
 ```bash
 python3 can-sender.py
 ```
 
 3. Logging CAN messages:
-Using socketcan you can log traffic:
+---
+   Using socketcan you can log traffic:
 ```bash
 candump vcan0 -l
 ```
-This generates log file like candump-2025-09-22_022331.log
-
+  This generates log file like candump-2025-09-22_022331.log
+---
 4. Converting Log to CSV:
 ```bash
 awk 'BEGIN {OFS=","; print "Timestamp","Interface","CAN_ID","Data"} 
