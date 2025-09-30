@@ -9,7 +9,7 @@ def main():
         msg = bus.recv()
         if msg:
             ts = time.time() - start_time
-            print(f"RX: Timestamp={ts:.6f} ID=0x{msg.arbitration_id:X}, Data={msg.data.hex()}")
+            print(f"RX: Timestamp={ts:.3f} ID=0x{msg.arbitration_id:X}, Data={msg.data.hex()}")
 
 
 if __name__ == "__main__":
